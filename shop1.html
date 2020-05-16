@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>shop1</title>
+    <style>
+    *{
+	margin: 0;
+	padding: 0;
+	font-family: Century Gothic;
+    }
+    header{
+        background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(12.jpg); 
+        height: 10vh;
+        background-size: cover;
+        background-position: top;
+        margin-bottom: 50px;
+    }
+    .main > ul{
+        float: right;
+        list-style-type: none;
+        margin-top: 20px; 
+    }
+    .main > ul li{
+        display: inline-block;
+        
+    }
+    .main > ul li a{
+        text-decoration: none;
+        color: white;
+        padding: 5px 20px;
+        border: 1px solid transparent;
+        transition: 0.6s ease;
+
+    }
+    .main > ul li a:hover{
+        background-color: white;
+        color: black;
+    }
+    .main > ul li.active a{
+        background-color: white;
+        color: black;
+    }
+    .main > ul li.on a{
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: 1px solid white ;
+        
+    }
+    .main > ul li.on a:hover{
+        background-color: white;
+        color: black;
+    }
+    body{
+        background-color:rgb(199, 206, 234);
+        background-size: cover;
+        font-family: 'Lato', sans-serif;
+        margin-bottom: 50px;
+    }
+    .container{
+        width: 1280px;
+        margin-top: 70px;
+        margin-left: 125px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .container .box{
+        position: relative;
+        width: 300px;
+        height: 300px;
+        background: white;
+        margin: 10px;
+        box-sizing: border-box;
+        display: inline-block;
+        transition: 0.5s ease-in-out;
+    }
+    .container .box .imgBox{
+        position: relative;
+        overflow: hidden;
+    }
+    .container .box .imgBox img{
+        border: 3px solid #fff;
+        border-radius: 7px;
+        max-width: 97%;
+        transition: transform 2s;
+    }
+    .container .box:hover .imgBox img{
+        transform: scale(1.5);
+    }
+    .container .box .details{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        bottom: 10px;
+        right: 10px;
+        transform: scaleY(0);
+        transition: transform 0.5s;
+    }
+    .container .box:hover .details{
+        transform: scaleY(1);
+    }
+    .container .box .details .content{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        padding: 15px;
+        color: #fff;
+    }
+    .container .box .details .content h2{
+        
+        text-align: center; 
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        color: #ff0;
+    }
+    .btn{
+        border: 1px solid #fff;
+	    padding: 10px 30px;
+    	color: #fff;
+        background: rgba(0,0,0,0.5);
+    	text-decoration: none;
+	    transition: 0.6s ease;
+    }
+    .btn:hover{
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+	<header>
+		<div class="main">
+			<ul>
+			<li class="on"><a href="glow.html">HOME</a></li>
+            <li ><a href="login.html"  >LOGIN</a></li>
+            <li ><a href="sale.html">SALE</a></li>
+            <li class="active"><a href="#">SHOP</a></li>
+			</ul>
+			</header>
+<img src="https://www.fentybeauty.com/on/demandware.static/-/Sites/default/dwf0355fcf/fenty/categories/7902_CHEEKS-OUT_BLUSH_CATEGORY_DESKTOP.jpg" width-max="620px" height="320px">
+			<div class="container">
+				<div class="box">
+					<div class="imgBox">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR3doVgjcIg58ono4HpUe0Fqluan8H4LhTgGt9hFQr-2-CKMNEMOPeb827eGUIsPNbm9cigtI-w&usqp=CAc">
+					</div>
+					<div class="details">
+						<div class="content">
+						<h2><a href="#" class="btn">Brushes</a></h2>
+						
+					</div>
+				</div>
+				</div>
+				<div class="box"><div class="imgBox">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR9TjuVAwsbVmh1qjMRqhx21I72S43aijI2TB6_m3eI5nazBr9Z&usqp=CAU">
+					</div>
+					<div class="details">
+						<div class="content">
+						<h2><a href="#" class="btn">foundation</a></h2>
+						
+					</div>
+				</div></div>
+				<div class="box"><div class="imgBox">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR8n7_UGw0U-yysg88FrKT6EaMpjKObApszUib5_x13iYy1W4mo&usqp=CAU">
+					</div>
+					<div class="details">
+						<div class="content">
+						<h2><a href="#" class="btn">concealer</a></h2>
+						
+					</div>
+				</div></div>
+				<div class="box"><div class="imgBox">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSns-aSw-Rp8dsAnor3GPRFeBv2w0WHLqQBRfpKHDpSXKxeMh7W&usqp=CAU">
+					</div>
+					<div class="details">
+						<div class="content">
+						<h2><a href="#" class="btn">blush</a></h2>
+						
+					</div>
+				</div></div>
+				<div class="box"><div class="imgBox">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTf4AawGXT1l_kgWel5q3Pyi0uJ7uqA45d45RTKCJ6F-o8sJ4c-&usqp=CAU">
+					</div>
+					<div class="details">
+						<div class="content">
+						<h2><a href="#" class="btn">lip tint</a></h2>
+						
+					</div>
+				</div></div>
+				<div class="box"><div class="imgBox">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQrPRay6KfxbdSaAAlVt8Ltw3CHNgv1wCBIqev1GgtY7-LPsHIW&usqp=CAU">
+					</div>
+					<div class="details">
+						<div class="content">
+						<h2><a href="#" class="btn">highlighter</a></h2>
+						
+					</div>
+				</div></div>
+				<div class="box"><div class="imgBox">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTnqtvlyQPS-h2ySJczUMyxvWSUzcXDbYqP81s4fQEIgnzUqq1t&usqp=CAU">
+					</div>
+					<div class="details">
+						<div class="content">
+						<h2><a href="#" class="btn">nail polish</a></h2>
+						
+					</div>
+				</div></div> 
+				<div class="box"><div class="imgBox">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQg9dIRTLa0IjWnULmo80m4zFthVu-v1GPxpshT3ZVmtLTFU4YD&usqp=CAU">
+					</div>
+					<div class="details">
+						<div class="content">
+						<h2><a href="#" class="btn">eyeshadow</a></h2>
+						
+					</div>
+				</div></div>                                                                  
+			</div>
+		</div>
+</body>
+</html>
