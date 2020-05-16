@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,11 +6,27 @@
 <body style= "background-color: #C7CEEA">
 <style>
 .marguee {text-color-white;padding:20px;}
-.img{
-margin-right:150px;
-margin-top:40px;
-margin-bottom:500px;
+.flex-container1 {
+  display: flex;
+  flex-wrap: wrap;
+  background-color:  #C7CEEA;
 }
+
+.flex-container1 > div {
+  background-color: white;
+  width: 400px;
+  height: 450px;
+  margin-top:25px;
+  margin-right:20px;
+  margin-bottom:10px;
+  margin-left:20px;
+ 
+  text-align: center;
+  line-height:18px;
+  font-size: 20px;
+}
+
+
 h3{color:white; text-align:center;font-size:30px;border:3px solid white;margin-left:250px;margin-right:250px;}
 
 .flex-container {
@@ -33,10 +50,11 @@ h3{color:white; text-align:center;font-size:30px;border:3px solid white;margin-l
 <body>
 <marquee scrollamount="3" behavior="alternate" style=" height: 25px; color: white; font-size: 15px; font-family: georgia; background-color: #0a010a;">SUMMER SALE IS BACK !!!!</marquee>
 <marquee direction="down" style="height:50px;"><img src="https://toys4uae.com/wp-content/uploads/2020/01/sale-1.gif" /></marquee>
-<div class="img">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTBCRz6rpzd9d2HDBvtxjgIgEqj8vgXmQKFXIZRUeEkrRrE4th6&usqp=CAU" width="350px" height="400px" align="right">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTMNSEdSouEFDOz8cxCF-31I7-dSY9-nMsSwwLCRVIRGiJIBSbt&usqp=CAU" width="350px" height="400px" align="right" >
-<img src="https://images.squarespace-cdn.com/content/53b3179ee4b0a4da207fcc19/1556840217206-BJ48R94XRS46DV1XGTM5/Sale.gif?content-type=image%2Fgif" width="350px" height="400px" align="right"><hr>
+
+<div class="flex-container1">
+<div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTBCRz6rpzd9d2HDBvtxjgIgEqj8vgXmQKFXIZRUeEkrRrE4th6&usqp=CAU" width="400" height="450"></div> 
+<div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTMNSEdSouEFDOz8cxCF-31I7-dSY9-nMsSwwLCRVIRGiJIBSbt&usqp=CAU" width="400" height="450" ></div>
+<div><img src="https://media.giphy.com/media/8PEc2K0uBRUYAcZJxe/giphy.gif" width="400" height="450"></div> 
 </div>
 
 <h3>PRODUCTS FOR SALE</h3><hr>
@@ -63,7 +81,6 @@ h3{color:white; text-align:center;font-size:30px;border:3px solid white;margin-l
 </div>
 </body>
 </html>
-
 
 
 
