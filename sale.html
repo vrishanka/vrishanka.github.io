@@ -1,10 +1,17 @@
-
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>sale</title>
-<body style= "background-color: #C7CEEA">
+
+
 <style>
+body{
+background-color:#C7CEEA;
+
+}
+
 .marguee {text-color-white;padding:20px;}
 .flex-container1 {
   display: flex;
@@ -37,48 +44,98 @@ h3{color:white; text-align:center;font-size:30px;border:3px solid white;margin-l
 
 .flex-container > div {
   background-color: white;
-  width: 300px;
-  margin:70px;
+  width: 350px;
+  height: 400px;
+  margin:30px auto;
   text-align: center;
   line-height:18px;
+  color:#C0C0C0;
   font-size: 20px;
 }
+button {
+    border: 1px solid black ;
+    padding: 4px 14px;
+    background-color: black;
+    color: #fff;
+    text-transform: uppercase;
+    float: center;
+    margin: 5px 0;
+    font-weight: 400;
+    cursor: pointer;
+    font-family: 'Roboto Condensed', sans-serif;
+    border-radius: 50px;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}	
 
 
 
 </style>
 <body>
 <marquee scrollamount="3" behavior="alternate" style=" height: 25px; color: white; font-size: 15px; font-family: georgia; background-color: #0a010a;">SUMMER SALE IS BACK !!!!</marquee>
-<marquee direction="down" style="height:50px;"><img src="https://toys4uae.com/wp-content/uploads/2020/01/sale-1.gif" /></marquee>
 
-<div class="flex-container1">
-<div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTBCRz6rpzd9d2HDBvtxjgIgEqj8vgXmQKFXIZRUeEkrRrE4th6&usqp=CAU" width="400" height="450"></div> 
-<div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTMNSEdSouEFDOz8cxCF-31I7-dSY9-nMsSwwLCRVIRGiJIBSbt&usqp=CAU" width="400" height="450" ></div>
-<div><img src="https://media.giphy.com/media/8PEc2K0uBRUYAcZJxe/giphy.gif" width="400" height="450"></div> 
-</div>
+
+<img src="https://cdn.shopify.com/s/files/1/1133/5964/files/89C93EEA-B483-4452-A9E6-BEDC37C4DC63_1512x.jpeg?v=1584570361">
 
 <h3>PRODUCTS FOR SALE</h3><hr>
 <div class="flex-container">
 
-<div><img src="https://images-static.nykaa.com/media/catalog/product/tr:w-276,h-276,cm-pad_resize/m/a/maybelline_vehcm.jpg"><pre>maybelline concealer
-<del>$10</del> $8</pre></div>
-<div><img src="https://images-static.nykaa.com/media/catalog/product/tr:w-276,h-276,cm-pad_resize/b/8/b8df29amac_litliptk_rv__1.jpg"><pre>Mac lipstick
-<del>$42</del> $37</pre></div>
-<div><img src="https://images-static.nykaa.com/media/catalog/product/tr:w-276,h-276,cm-pad_resize/7/d/7d6b0c58904330900486_1.jpg"><pre>kay beauty eyeliner
-<del>$12</del> $10</pre></div>
-<div><img src="https://images-static.nykaa.com/media/catalog/product/tr:w-276,h-276,cm-pad_resize/4/1/41554259247-1_1.jpg"><pre>maybelline concealer
-<del>$8</del> $6</pre></div>
-<div><img src="https://images-static.nykaa.com/media/catalog/product/tr:w-276,h-276,cm-pad_resize/h/6/h6291106032710_1.jpg"><pre>Huda beauty palette
-<del>$45</del> $40</pre></div>
-<div><img src="https://images-static.nykaa.com/media/catalog/product/tr:w-276,h-276,cm-pad_resize/r/e/replaceblush-brush.jpg"><pre>Nykaa powder brush
-<del>$6</del> $4.5</pre></div>
-<div><img src="https://images-static.nykaa.com/media/catalog/product/tr:w-276,h-276,cm-pad_resize/4/1/41554538281.1_1.jpg"><pre>Nykaa blush
-<del>$10</del> $8</pre></div>
-<div><img src="https://images-static.nykaa.com/media/catalog/product/tr:w-276,h-276,cm-pad_resize/6/5/651986703135_1_1_.jpg"><pre>Too faced highlighter
-<del>$30</del> $27.5</pre></div>
-<div><img src="https://images-static.nykaa.com/media/catalog/product/tr:w-276,h-276,cm-pad_resize/8/1/81555979652_1_14.jpg"><pre>Estee Lauder foundation
-<del>$40<del> $36</pre></div>
+<div><img src="https://images-static.nykaa.com/media/catalog/product/tr:w-276,h-276,cm-pad_resize/m/a/maybelline_vehcm.jpg"><hr><pre>maybelline concealer
+<del>$10</del> $8
+<button class="button"><span>add to cart </span></button><pre></div>
+
+
+<div><img src="https://images-static.nykaa.com/media/catalog/product/tr:w-276,h-276,cm-pad_resize/b/8/b8df29amac_litliptk_rv__1.jpg"><hr><pre>Mac lipstick
+<del>$42</del> $37
+<button class="button"><span>add to cart </span></button><pre></div>
+
+<div><img src="https://images-static.nykaa.com/media/catalog/product/tr:w-276,h-276,cm-pad_resize/7/d/7d6b0c58904330900486_1.jpg"><hr><pre>kay beauty eyeliner
+<del>$12</del> $10
+<button class="button"><span>add to cart </span></button><pre></div>
+
+<div><img src="https://images-static.nykaa.com/media/catalog/product/tr:w-276,h-276,cm-pad_resize/4/1/41554259247-1_1.jpg"><hr><pre>maybelline concealer
+<del>$8</del> $6
+<button class="button"><span>add to cart </span></button><pre></div>
+
+<div><img src="https://images-static.nykaa.com/media/catalog/product/tr:w-276,h-276,cm-pad_resize/h/6/h6291106032710_1.jpg"><hr><pre>Huda beauty palette
+<del>$45</del> $40
+<button class="button"><span>add to cart </span></button><pre></div>
+<div><img src="https://images-static.nykaa.com/media/catalog/product/tr:w-276,h-276,cm-pad_resize/r/e/replaceblush-brush.jpg"><hr><pre>Nykaa powder brush
+<del>$6</del> $4.5
+<button class="button"><span>add to cart </span></button><pre></div>
+<div><img src="https://images-static.nykaa.com/media/catalog/product/tr:w-276,h-276,cm-pad_resize/4/1/41554538281.1_1.jpg"><hr><pre>Nykaa blush
+<del>$10</del> $8
+<button class="button"><span>add to cart </span></button><pre></div>
+<div><img src="https://images-static.nykaa.com/media/catalog/product/tr:w-276,h-276,cm-pad_resize/6/5/651986703135_1_1_.jpg"><hr><pre>Too faced highlighter
+<del>$30</del> $27.5
+<button class="button"><span>add to cart </span></button><pre></div>
+<div><img src="https://images-static.nykaa.com/media/catalog/product/tr:w-276,h-276,cm-pad_resize/8/1/81555979652_1_14.jpg"><hr><pre>Estee Lauder foundation
+<del>$40<del> $36
+<button class="button"><span>add to cart </span></button><pre></div>
 </div>
+
 </body>
 </html>
 
