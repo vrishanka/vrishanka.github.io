@@ -9,50 +9,45 @@
     *{
 	margin: 0;
 	padding: 0;
+	
+	
+
 	font-family: Century Gothic;
     }
     header{
-        background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(12.jpg); 
+        background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) url(12.jpg); 
         height: 10vh;
         background-size: cover;
         background-position: top;
         margin-bottom: 50px;
     }
-    .main > ul{
-        float: right;
-        list-style-type: none;
-        margin-top: 20px; 
-    }
-    .main > ul li{
-        display: inline-block;
-        
-    }
-    .main > ul li a{
-        text-decoration: none;
-        color: white;
-        padding: 5px 20px;
-        border: 1px solid transparent;
-        transition: 0.6s ease;
+    .navbar {
+  overflow: hidden;
+  background-color:transparent;
+  position: relative;
+  top: 0;
+  width: 100%;
+  
+}
 
-    }
-    .main > ul li a:hover{
-        background-color: white;
-        color: black;
-    }
-    .main > ul li.active a{
-        background-color: white;
-        color: black;
-    }
-    .main > ul li.on a{
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
-        border: 1px solid white ;
-        
-    }
-    .main > ul li.on a:hover{
-        background-color: white;
-        color: black;
-    }
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+
+.navbar a:hover {
+  background: white;
+  color: #C7CEEA;
+}
+
+	
     body{
         background-color:rgb(199, 206, 234);
         background-size: cover;
@@ -133,15 +128,13 @@
     </style>
 </head>
 <body>
-	<header>
-		<div class="main">
-			<ul>
-			<li class="on"><a href="glow1.html">HOME</a></li>
-            <li ><a href="login.html"  >LOGIN</a></li>
-            <li ><a href="sale.html">SALE</a></li>
-            <li class="active"><a href="#">SHOP</a></li>
-			</ul>
-			</header>
+	<div class="navbar">
+  <a href="GLOW.html">Home</a>
+  <a href="sale.html">Sale</a>
+  <a href="about us.html">About us</a>
+  <a href="login.html">login</a>
+</div>
+
 <img src="https://www.fentybeauty.com/on/demandware.static/-/Sites/default/dwf0355fcf/fenty/categories/7902_CHEEKS-OUT_BLUSH_CATEGORY_DESKTOP.jpg" width-max="620px" height="320px">
 			<div class="container">
 				<div class="box">
