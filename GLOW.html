@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:#C7CEEA;
+
+}
+.navbar {
+  overflow: hidden;
+  background-color:transparent;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+
+.navbar a:hover {
+  background: white;
+  color: #C7CEEA;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Images used */
+.img1 { background-image: url("https://images.unsplash.com/photo-1515688594390-b649af70d282?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"); }
+.img2 { background-image: url("https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"); }
+.img3 { background-image: url("https://images.pexels.com/photos/1213558/pexels-photo-1213558.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"); }
+.img4 { background-image: url("https://images.unsplash.com/photo-1487412912498-0447578fcca8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"); }
+.img5 { background-image: url("https://images.pexels.com/photos/3373744/pexels-photo-3373744.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"); }
+
+
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size: 80px;
+   
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  -webkit-animation: bg-text 1s ease-in-out infinite alternate;
+  -moz-animation:bg-text  1s ease-in-out infinite alternate;
+  animation: bg-text 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes bg-text {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #8565c4, 0 0 40px #8565c4 , 0 0 50px #8565c4 , 0 0 60px #8565c4, 0 0 70px #8565c4;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #c0aee0 , 0 0 40px #c0aee0 , 0 0 50px #c0aee0 , 0 0 60px #c0aee0 , 0 0 70px #c0aee0, 0 0 80px #c0aee0;
+  }
+
+}
+.footer-distributed{
+	background-color:#a28ad2;
+	
+	width: 100%;
+
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 50px 50px;
+	margin-top: 0px;
+	padding-top: 15px;
+	padding-bottom:15px;
+  }
+  
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+	
+  }
+  
+  /* Footer left */
+  
+  .footer-distributed .footer-left{
+	width: 40%;
+  }
+  
+  /* The company logo */
+  
+  .footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+	border-radius: 60%;
+  }
+  
+  .footer-distributed h3 span{
+	color:  #5383d3;
+  }
+  
+  /* Footer links */
+  
+  .footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+  }
+  
+  .footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+	font-size: 10px;
+  }
+  
+  .footer-distributed .footer-company-name{
+	color:  black;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+  }
+  
+  /* Footer Center */
+  
+  .footer-distributed .footer-center{
+	width: 35%;
+  }
+  
+  .footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+  }
+  
+  .footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+  }
+  
+  .footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+  }
+  
+  .footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+  }
+  
+  .footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;;
+  }
+  
+  
+  /* Footer Right */
+  
+  .footer-distributed .footer-right{
+	width: 20%;
+  }
+  
+  .footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  white;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+  }
+  
+  .footer-distributed .footer-company-about span{
+	display: block;
+	color:  white;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+  }
+  
+  .footer-distributed .footer-icons{
+	margin-top: 25px;
+  }
+  
+  .footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;  
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+	margin-right: 3px;
+	margin-bottom: 5px;
+  }
+  .responsive {
+  width: 100%;
+  height: auto;
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+  <a href="shop1.html">Shop</a>
+  <a href="sale.html">Sale</a>
+  <a href="about us.html">About us</a>
+  <a href="login.html">login</a>
+</div>
+
+<div class="bg-image img1"></div>
+<div class="bg-image img2"></div>
+<div class="bg-image img3"></div>
+<div class="bg-image img4"></div>
+<div class="bg-image img5"></div>
+
+
+<div class="bg-text">glow</div>
+<footer class="footer-distributed">
+
+      <div class="footer-left">
+
+        <h3><a href="home.html"><img src="glow1.jpg" height="140px" width="150px"></a></h3>
+
+        <p class="footer-links">
+          <a href="home.html">Home</a>
+          -
+          <a href="about us.html">About</a>
+        </p>
+
+        <p class="footer-company-name">GLOW &copy; 2020</p>
+      </div>
+
+      <div class="footer-center">
+
+        <div>
+          <i class="Address:"></i>
+          <p><span>Sector 10,Near R.A.I.T College</span> Nerul, Navi Mumbai</p>
+        </div>
+
+        <div>
+          <i class="ContactUs"></i>
+          <p>Phone:022-216775</p><br>
+          <pre>   Phone:022-223784</pre><br><br>
+          <pre>   Mobile No:984434857</pre>
+        </div>
+
+        <div>
+          <i class="Our Emailid"></i>
+          <p><a>Email:glow@gmail@gmail.com</a></p>
+        </div>
+
+      </div>
+
+      <div class="footer-right">
+
+        <p class="footer-company-about">
+          <span>About the company</span>
+             GLOW is the world’s leading professional makeup authority because of our unrivalled expertise in makeup ARTISTRY.GLOW celebrates diversity and INDIVIDUALITY – we are for All Ages, All Races, All Genders.
+        </p>
+
+        <div class="footer-icons">
+
+          <a href="https://www.facebook.com/"><img src="glow/facebook.png" class="responsive"  height="35px" width="35px"></a>
+          
+          <a href="https://www.twitter.com/login"><img src="glow/twitter.jpg" class="responsive" height="35px" width="35px"></a>
+          <a href="https://www.youtube.com/signin"><img src="glow/yout.jpg" class="responsive" height="35px" width="35px"></a>
+
+        </div>
+
+      </div>
+
+    </footer>
+</body>
+</html>
